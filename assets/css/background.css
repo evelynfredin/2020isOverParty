@@ -4,9 +4,9 @@
 * SECTION 1
 ******************************/
 .corona {
-  background: #72c6ef;
-  background: -webkit-linear-gradient(to top, #2f80ed, #72c6ef);
-  background: linear-gradient(to top, #2f80ed, #72c6ef);
+  background: var(--bg-top);
+  background: -webkit-linear-gradient(to top, var(--bg-bottom), var(--bg-top));
+  background: linear-gradient(to top, var(--bg-bottom), var(--bg-top));
   position: relative;
   overflow: hidden;
   display: flex;

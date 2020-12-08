@@ -1,3 +1,38 @@
+:root {
+  --bg-top: #72c6ef;
+  --bg-bottom: #2f80ed;
+  --yellow: #ffc837;
+  --headings: "Nerko One", cursive;
+  --body: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "Nerko One";
+  src: url("../fonts/NerkoOne-Regular.woff2") format("woff2"),
+    url("../fonts/NerkoOne-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +42,17 @@
 html {
   scroll-snap-type: y proximity;
   -webkit-overflow-scrolling: touch;
+  font-family: var(--body);
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headings);
 }
 
 section {
@@ -14,4 +60,12 @@ section {
   width: 100vw;
   overflow: hidden;
   scroll-snap-align: start;
+}
+
+h1.year {
+  color: var(--yellow);
+  line-height: 6rem;
+  font-size: 8rem;
+  z-index: 2;
+  animation: fromLeft 2s ease-out;
 }
