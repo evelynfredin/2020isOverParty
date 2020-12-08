@@ -1,0 +1,73 @@
+/* Here you can find all the background-related styles for each section */
+
+/******************************
+* SECTION 1 – Corona
+******************************/
+.corona {
+  background: var(--bg-top);
+  background: -webkit-linear-gradient(to top, var(--bg-bottom), var(--bg-top));
+  background: linear-gradient(to top, var(--bg-bottom), var(--bg-top));
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.corona .corona-l1,
+.corona .corona-l2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1.year {
+  color: var(--yellow);
+  font-size: 6rem;
+  z-index: 2;
+  animation: fromLeft 2s ease-out;
+  margin: 0;
+}
+
+.intro-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  animation: fromRight 2s ease-out;
+}
+
+/******************************
+* SECTION 2 – Maradona
+******************************/
+
+.maradios {
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.maradios h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.quote {
+  max-width: 90%;
+}
+
+.ask-diego {
+  font-size: 0.9rem;
+  color: rgb(99, 105, 9);
+  text-align: center;
+}
+
+/******************************
+* SECTION 2 – Trumpona
+******************************/

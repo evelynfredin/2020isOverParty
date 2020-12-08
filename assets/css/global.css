@@ -40,7 +40,7 @@
 }
 
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
   font-family: var(--body);
   font-size: 17px;
@@ -60,12 +60,4 @@ section {
   width: 100vw;
   overflow: hidden;
   scroll-snap-align: start;
-}
-
-h1.year {
-  color: var(--yellow);
-  line-height: 6rem;
-  font-size: 8rem;
-  z-index: 2;
-  animation: fromLeft 2s ease-out;
 }
