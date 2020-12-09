@@ -19,10 +19,35 @@ window.addEventListener('scroll', () => {
 const quote = document.querySelector('.quote');
 const url = 'https://marad10s.evelynfredin.com/api/';
 
-fetch(url)
-.then((res) => {
-    return res.json();
-})
-.then((json) => {
-    quote.textContent = json.quote;
+
+const maradona = document.querySelector('button.no-button');
+maradona.addEventListener('click', () => {
+  fetch(url)
+  .then((res) => {
+      return res.json();
+  })
+  .then((json) => {
+      quote.textContent = json.quote;
+  });
+});
+
+
+const isInViewport = (elem) => {
+	let distance = elem.getBoundingClientRect();
+	return (
+		distance.top >= 0 &&
+		distance.left >= 0 &&
+		distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+};
+
+const slideAnim = document.querySelectorAll('.hidden');
+slideAnim.forEach(element => {
+    window.addEventListener('scroll', function () {
+        if (isInViewport(element)) {
+            element.classList.add('slide-in');
+        }
+    },
+    false);
 });

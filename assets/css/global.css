@@ -61,3 +61,12 @@ section {
   overflow: hidden;
   scroll-snap-align: start;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.slide-in {
+  animation: fromBottom 2s ease-out;
+  opacity: 1;
+}

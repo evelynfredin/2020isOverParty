@@ -27,4 +27,7 @@
   .maradios h2 {
     font-size: 4rem;
   }
+  .quote {
+    max-width: 900px;
+  }
 }
