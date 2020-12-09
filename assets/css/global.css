@@ -40,7 +40,7 @@
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   -webkit-overflow-scrolling: touch;
   font-family: var(--body);
   font-size: 17px;
