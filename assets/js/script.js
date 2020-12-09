@@ -17,12 +17,12 @@ window.addEventListener('scroll', () => {
 
 //Quotes
 const quote = document.querySelector('.quote');
-const url = 'https://breaking-bad-quotes.herokuapp.com/v1/quotes';
+const url = 'https://marad10s.evelynfredin.com/api/';
 
 fetch(url)
 .then((res) => {
     return res.json();
 })
 .then((json) => {
-    quote.textContent = json[0].quote;
+    quote.textContent = json.quote;
 });
