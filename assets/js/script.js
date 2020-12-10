@@ -1,3 +1,4 @@
+// Intro background
 const corona = document.querySelector('.corona-l1');
 const coronaOverlay = document.querySelector('.corona-l2');
 const year = document.querySelector('.year');
@@ -15,10 +16,9 @@ window.addEventListener('scroll', () => {
 })
 
 
-//Quotes
+// Maradona was the Kanye of football
 const quote = document.querySelector('.quote');
 const url = 'https://marad10s.evelynfredin.com/api/';
-
 
 const maradona = document.querySelector('button.no-button');
 maradona.addEventListener('click', () => {
@@ -31,7 +31,7 @@ maradona.addEventListener('click', () => {
   });
 });
 
-
+// Recycled animations
 const isInViewport = (elem) => {
 	let distance = elem.getBoundingClientRect();
 	return (
@@ -50,4 +50,36 @@ slideAnim.forEach(element => {
         }
     },
     false);
+});
+
+
+//isLoser = true
+const crySection = document.querySelector('.cry-baby');
+const cryButton = document.querySelector('.make-him-cry');
+
+const loser = [
+  'assets/img/trump-cry-baby.png',
+  'assets/img/trump-loser.png',
+  'assets/img/loser-bk.png',
+  'assets/img/loser-wt.png'
+];
+
+const imgTemplate = (element) => {
+    return `
+  <img src="${element}" alt="RIGGED ELECTION" width="50px">
+  `;
+};
+
+const loserLoop = () => {
+  const loserRainfall = document.createElement("div");
+  loserRainfall.classList.add("loserRainfall");
+  let loserImg = imgTemplate(loser[Math.floor(Math.random() * loser.length)]);
+  loserRainfall.innerHTML = loserImg;
+  loserRainfall.style.left = Math.random() * 100 + "vw";
+  loserRainfall.style.animationDuration = Math.random() * 2 + 1 + "s"
+  crySection.appendChild(loserRainfall);
+}
+
+cryButton.addEventListener('click', () => {
+  setInterval(loserLoop, 500);
 });

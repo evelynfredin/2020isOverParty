@@ -26,15 +26,16 @@
 }
 
 h1.year {
-  color: var(--yellow);
+  color: var(--pink);
   font-size: 6rem;
   z-index: 2;
   animation: fromLeft 2s ease-out;
   margin: 0;
+  text-shadow: rgba(24, 24, 24, 0.267) 70px 0 20px;
 }
 
 .intro-text {
-  color: white;
+  color: var(--white);
   font-size: 1.2rem;
   font-weight: 600;
   animation: fromRight 2s ease-out;
@@ -45,17 +46,11 @@ h1.year {
 ******************************/
 
 .maradios {
-  background: var(--yellow);
+  background: var(--pink);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.maradios h2 {
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
 }
 
 .quote {
@@ -64,7 +59,6 @@ h1.year {
 
 .ask-diego {
   font-size: 0.9rem;
-  color: rgb(99, 105, 9);
   text-align: center;
 }
 
@@ -89,3 +83,44 @@ button.no-button:focus {
 /******************************
 * SECTION 2 – Trumpona
 ******************************/
+.cry-baby {
+  background: var(--bg-bottom);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.loserRainfall {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+.make-him-cry {
+  border: 2px solid var(--bg-top);
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.make-him-cry:hover {
+  border: none;
+  background-color: var(--white);
+  transform: scale(0.99);
+  transform: translateY(-0.5rem);
+}
+
+.make-him-cry:focus {
+  outline-style: inherit;
+}
+
+.message {
+  margin: 2rem;
+  text-align: center;
+}

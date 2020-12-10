@@ -45,3 +45,9 @@
     transform: translateY(0);
   }
 }
+
+@keyframes fall {
+  to {
+    transform: translateY(101vh);
+  }
+}
