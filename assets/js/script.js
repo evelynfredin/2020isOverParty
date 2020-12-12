@@ -54,9 +54,10 @@ slideAnim.forEach(element => {
 });
 
 
-//isLoser = true
-const crySection = document.querySelector('.cry-baby');
+// Trump
+const crySection = document.querySelector('.cry-here');
 const cryButton = document.querySelector('.make-him-cry');
+let interval = 0;
 
 const loser = [
   'assets/img/trump-cry-baby.png',
@@ -67,12 +68,13 @@ const loser = [
 
 const imgTemplate = (element) => {
     return `
-  <img src="${element}" alt="RIGGED ELECTION" width="50px">
+  <img src="${element}" alt="RIGGED ELECTION">
   `;
 };
 
+
 const loserLoop = () => {
-  const loserRainfall = document.createElement("div");
+  let loserRainfall = document.createElement("div");
   loserRainfall.classList.add("loserRainfall");
   let loserImg = imgTemplate(loser[Math.floor(Math.random() * loser.length)]);
   loserRainfall.innerHTML = loserImg;
@@ -82,6 +84,17 @@ const loserLoop = () => {
 }
 
 cryButton.addEventListener('click', () => {
-  setInterval(loserLoop, 500);
-  false;
+  if(interval > 0) {
+    cryButton.textContent = 'Tell me who!';
+    clearInterval(interval);
+    let loserDivs = crySection.lastChild;
+    while(loserDivs) {
+      crySection.removeChild(loserDivs);
+      loserDivs = crySection.lastChild;
+    }
+    interval = 0;
+    return;
+  }
+  cryButton.textContent = 'Oh stahp it!';
+  interval = setInterval(loserLoop, 500);
 });
