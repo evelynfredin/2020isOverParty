@@ -49,13 +49,23 @@ h1.year {
   background: var(--green);
 }
 
-.quote {
-  max-width: 90%;
+.quote.on {
+  max-width: 600px;
+  background: var(--alt-green);
+  padding: 1rem 0.5rem 3rem;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    45% 75%,
+    50% 100%,
+    25% 75%,
+    0% 75%
+  );
 }
 
 .ask-diego {
   font-size: 0.9rem;
-  text-align: center;
 }
 
 button.no-button {
@@ -80,7 +90,7 @@ button.no-button:focus {
 * SECTION 2 – Trumpona
 ******************************/
 .cry-baby {
-  background: var(--bg-bottom);
+  background: var(--bg-top);
 }
 
 .loserRainfall {
@@ -92,7 +102,7 @@ button.no-button:focus {
 }
 
 .make-him-cry {
-  border: 2px solid var(--bg-top);
+  border: 2px solid var(--dark);
   margin-top: 3rem;
   padding: 1rem 2rem;
   background: transparent;
@@ -100,7 +110,7 @@ button.no-button:focus {
   transition: all 0.5s;
   font-family: var(--headings);
   font-size: 1.4rem;
-  color: var(--white);
+  color: var(--dark);
 }
 
 .make-him-cry:hover {
@@ -108,7 +118,7 @@ button.no-button:focus {
   background-color: var(--white);
   transform: scale(0.99);
   transform: translateY(-0.5rem);
-  color: black;
+  color: var(--dark);
 }
 
 .make-him-cry:focus {
@@ -117,5 +127,6 @@ button.no-button:focus {
 
 .message {
   margin: 2rem;
-  text-align: center;
+  background: var(--alt-blue);
+  padding: 1rem;
 }

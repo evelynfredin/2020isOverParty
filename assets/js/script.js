@@ -22,6 +22,7 @@ const url = 'https://marad10s.evelynfredin.com/api/';
 
 const maradona = document.querySelector('button.no-button');
 maradona.addEventListener('click', () => {
+  quote.classList.add('on');
   fetch(url)
   .then((res) => {
       return res.json();
@@ -85,7 +86,7 @@ const loserLoop = () => {
 
 cryButton.addEventListener('click', () => {
   if(interval > 0) {
-    cryButton.textContent = 'Tell me who!';
+    cryButton.textContent = 'You can go now!';
     clearInterval(interval);
     let loserDivs = crySection.lastChild;
     while(loserDivs) {
