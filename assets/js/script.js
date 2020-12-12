@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
   if(value === 0) {
     year.style.transform = "scale(" + 1 + ")";
 } else {
-    year.style.transform  = "scale(" + value * 0.05 + ")";
+    year.style.transform  = "scale(" + value * 0.01 + ")";
 }
 })
 
@@ -30,6 +30,7 @@ maradona.addEventListener('click', () => {
       quote.textContent = json.quote;
   });
 });
+
 
 // Recycled animations
 const isInViewport = (elem) => {
@@ -82,4 +83,5 @@ const loserLoop = () => {
 
 cryButton.addEventListener('click', () => {
   setInterval(loserLoop, 500);
+  false;
 });

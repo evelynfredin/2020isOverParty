@@ -7,8 +7,8 @@
     font-size: 2rem;
   }
 
-  .maradios h2 {
-    font-size: 3.5rem;
+  h2 {
+    font-size: 3rem;
   }
 
   .ask-diego {
@@ -24,10 +24,12 @@
   .intro-text {
     font-size: 3rem;
   }
-  .maradios h2 {
+
+  h2 {
     font-size: 4rem;
   }
+
   .quote {
-    max-width: 900px;
+    max-width: 700px;
   }
 }

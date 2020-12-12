@@ -26,7 +26,7 @@
 }
 
 h1.year {
-  color: var(--pink);
+  color: var(--green);
   font-size: 6rem;
   z-index: 2;
   animation: fromLeft 2s ease-out;
@@ -46,11 +46,7 @@ h1.year {
 ******************************/
 
 .maradios {
-  background: var(--pink);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background: var(--green);
 }
 
 .quote {
@@ -85,11 +81,6 @@ button.no-button:focus {
 ******************************/
 .cry-baby {
   background: var(--bg-bottom);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
 }
 
 .loserRainfall {
@@ -107,6 +98,9 @@ button.no-button:focus {
   background: transparent;
   border-radius: 100px;
   transition: all 0.5s;
+  font-family: var(--headings);
+  font-size: 1.4rem;
+  color: var(--white);
 }
 
 .make-him-cry:hover {
@@ -114,6 +108,7 @@ button.no-button:focus {
   background-color: var(--white);
   transform: scale(0.99);
   transform: translateY(-0.5rem);
+  color: black;
 }
 
 .make-him-cry:focus {
