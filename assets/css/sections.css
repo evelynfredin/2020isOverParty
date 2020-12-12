@@ -53,6 +53,8 @@ h1.year {
   max-width: 600px;
   background: var(--alt-green);
   padding: 1rem 0.5rem 3rem;
+  border: 4px solid;
+  border-image: linear-gradient(to right, #7df18d, #07f5ad, #7df18d) 1;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -71,19 +73,20 @@ h1.year {
 button.no-button {
   background: transparent;
   border: none;
+  cursor: pointer;
   filter: drop-shadow(16px 16px 20px rgba(29, 29, 29, 0.514));
 }
 
 button.no-button:focus {
-  outline: none;
+  outline: 2px solid transparent;
 }
 
 .diego:hover {
-  transform: translateY(-0.5rem);
+  transform: translateY(-1rem);
 }
 
 .diego:hover:active {
-  transform: translateY(-0.1rem);
+  transform: translateY(0);
 }
 
 /******************************
@@ -102,7 +105,7 @@ button.no-button:focus {
 }
 
 .make-him-cry {
-  border: 2px solid var(--dark);
+  border: 4px solid var(--alt-dark);
   margin-top: 3rem;
   padding: 1rem 2rem;
   background: transparent;
@@ -111,22 +114,27 @@ button.no-button:focus {
   font-family: var(--headings);
   font-size: 1.4rem;
   color: var(--dark);
+  cursor: pointer;
+  box-shadow: 12px 12px 20px 1px rgba(61, 61, 61, 0.2);
 }
 
 .make-him-cry:hover {
   border: none;
   background-color: var(--white);
   transform: scale(0.99);
-  transform: translateY(-0.5rem);
+  transform: translateY(1rem);
   color: var(--dark);
+  /* box-shadow: 3px 3px 2px 1px rgba(61, 61, 61, 0.2); */
 }
 
 .make-him-cry:focus {
-  outline-style: inherit;
+  outline: 2px solid transparent;
 }
 
 .message {
   margin: 2rem;
   background: var(--alt-blue);
   padding: 1rem;
+  border: 4px solid;
+  border-image: linear-gradient(to right, #0074e0, #44b7e4, #0074e0) 1;
 }

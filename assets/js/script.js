@@ -97,5 +97,5 @@ cryButton.addEventListener('click', () => {
     return;
   }
   cryButton.textContent = 'Oh stahp it!';
-  interval = setInterval(loserLoop, 500);
+  interval = setInterval(loserLoop, 300);
 });
