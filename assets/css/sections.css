@@ -83,6 +83,21 @@ button.no-button:focus {
   transition: all ease 0.5s;
 }
 
+span.api {
+  color: var(--bg-bottom);
+  display: block;
+  font-size: 0.9rem;
+}
+
+span.api a {
+  color: var(--alt-blue);
+  text-decoration: none;
+}
+
+span.api a:hover {
+  color: var(--bg-bottom);
+}
+
 .diego:hover {
   opacity: 0.8;
 }
