@@ -1,5 +1,3 @@
-/* Here you can find all the background-related styles for each section */
-
 /******************************
 * SECTION 1 – Corona
 ******************************/
@@ -81,12 +79,16 @@ button.no-button:focus {
   outline: 2px solid transparent;
 }
 
+.diego {
+  transition: all ease 0.5s;
+}
+
 .diego:hover {
-  transform: translateY(-1rem);
+  opacity: 0.8;
 }
 
 .diego:hover:active {
-  transform: translateY(0);
+  transform: translateY(1rem);
 }
 
 /******************************
@@ -101,7 +103,7 @@ button.no-button:focus {
   top: -1vh;
   font-size: 2rem;
   transform: translateY(0);
-  animation: fall 3s linear forwards;
+  animation: fromTop 3s linear forwards;
 }
 
 .make-him-cry {
@@ -124,7 +126,7 @@ button.no-button:focus {
   transform: scale(0.99);
   transform: translateY(1rem);
   color: var(--dark);
-  /* box-shadow: 3px 3px 2px 1px rgba(61, 61, 61, 0.2); */
+  box-shadow: 3px 3px 2px 1px rgba(61, 61, 61, 0.2);
 }
 
 .make-him-cry:focus {

@@ -46,7 +46,7 @@
   }
 }
 
-@keyframes fall {
+@keyframes fromTop {
   to {
     transform: translateY(101vh);
   }

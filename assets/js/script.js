@@ -19,8 +19,8 @@ window.addEventListener('scroll', () => {
 // Maradona was the Kanye of football
 const quote = document.querySelector('.quote');
 const url = 'https://marad10s.evelynfredin.com/api/';
-
 const maradona = document.querySelector('button.no-button');
+
 maradona.addEventListener('click', () => {
   quote.classList.add('on');
   fetch(url)
